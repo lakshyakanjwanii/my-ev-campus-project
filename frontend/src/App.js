@@ -296,13 +296,13 @@ function DashboardPage({ showToast }) {
 function LeaderboardPage() {
     // This data is mocked for the frontend-only feature
     const leaderboardData = [
-        { rank: 1, name: 'Suryansh K.', savings: '15.8 kg CO₂' },
-        { rank: 2, name: 'Tanay M.', savings: '12.2 kg CO₂' },
-        { rank: 3, name: 'Mayank H.', savings: '11.6 kg CO₂' },
-        { rank: 4, name: 'Dev C.', savings: '9.8 kg CO₂' },
-        { rank: 5, name: 'Irisha D.', savings: '9.0 kg CO₂' },
-        { rank: 6, name: 'Ayush K.', savings: '8.5 kg CO₂' },
-        { rank: 7, name: 'Shreya K.', savings: '7.9 kg CO₂' },
+        { rank: 1, name: 'Lakshya Kanjwani', savings: '15.8 kg CO₂' },
+        { rank: 2, name: 'Ishita Gurbaxani', savings: '12.2 kg CO₂' },
+        { rank: 3, name: 'Bhavisha Kewalramani', savings: '11.6 kg CO₂' },
+        { rank: 4, name: 'Dev Chand', savings: '9.8 kg CO₂' },
+        { rank: 5, name: 'Irisha Deshpande', savings: '9.0 kg CO₂' },
+        { rank: 6, name: 'Ayush Kushwaha', savings: '8.5 kg CO₂' },
+        { rank: 7, name: 'Shreya Khandelwal', savings: '7.9 kg CO₂' },
     ];
 
     return (
@@ -328,7 +328,7 @@ function ChargingStationsPage() {
         { name: "Student lounge", details: "2 DC Fast Chargers", status: "In Use" },
         { name: "Science Building Lot D", details: "6 Level 2 Chargers", status: "Available" },
         { name: "Basketball Court", details: "8 Level 2 Chargers", status: "Maintenance" },
-        { name: "UniKamp Office", details: "4 Level 2 Chargers", status: "Available" },
+        { name: "Foyer", details: "4 Level 2 Chargers", status: "Available" },
     ];
     
     const filteredStations = stations.filter(s => filter === 'All' || s.status === filter);
@@ -368,10 +368,10 @@ function CampusMapPage() {
                 <div className="road road-v" style={{ left: '250px' }}></div>
                 <div className="road road-v" style={{ left: '650px' }}></div>
                 <div className="building" style={{ top: '15px', left: '30px', width: '150px', height: '120px' }}>Library</div>
-                <div className="building" style={{ top: '10px', left: '350px', width: '200px', height: '120px' }}>Sagar Sirs Lab</div>
+                <div className="building" style={{ top: '10px', left: '350px', width: '200px', height: '120px' }}>Java Lab</div>
                 <div className="building" style={{ top: '320px', left: '350px', width: '240px', height: '120px' }}>Chai Bugs</div>
-                <div className="building" style={{ top: '180px', left: '350px', width: '240px', height: '120px' }}>Suryansh's Office</div>
-                <div className="building" style={{ top: '10px', left: '700px', width: '300px', height: '120px' }}>UniKamp Office</div>
+                <div className="building" style={{ top: '180px', left: '350px', width: '240px', height: '120px' }}>Foyer</div>
+                <div className="building" style={{ top: '10px', left: '700px', width: '300px', height: '120px' }}>Kataria</div>
                 <div className="building" style={{ top: '200px', right: '50px', width: '230px', height: '230px' }}>Science Dept.</div>
                 <div className="building" style={{ top: '200px', right: '850px', width: '180px', height: '230px' }}>Student Lounge</div>
                 <div className="pin" style={{ top: '115px', left: '215px' }}><div className="pin-inner">⚡</div></div>
@@ -386,9 +386,9 @@ function CampusMapPage() {
 
 function ContactUsPage() {
     const team = [
-        { name: "Ayush Kushwaha", role: "Backend & Systems Architecture" },
-        { name: "Tanay Malvankar", role: "Database & API Optimization" },
-        { name: "Dev Chand", role: "UI/UX Design & Frontend Logic" },
+        { name: "Ishita Gurbaxani", role: "Backend & Systems Architecture" },
+        { name: "Lakshya Kanjwani", role: "Database & API Optimization" },
+        { name: "Bhavisha Kewalramani", role: "UI/UX Design & Frontend Logic" },
     ];
 
     return (

@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&family=Inter:wght@400;500;600&display=swap');
 
-/* --- Global Styles & Variables --- */
+/* --- Global Styles & Variables (Cyberpunk Glow Theme) --- */
 :root {
-  --bg-dark: #071022; --accent: #00d1ff; --accent-2: #00ffa6;
-  --glass: rgba(255,255,255,0.06); --card: rgba(255,255,255,0.04);
-  --muted: rgba(255,255,255,0.7);
+  --bg-dark: #0F0A1E; /* Deep, dark purple background */
+  --accent: #F92672; /* Vibrant magenta/pink for main actions */
+  --accent-2: #9D61FF; /* Electric purple for secondary highlights */
+  --glass: rgba(157, 97, 255, 0.08); /* A faint purple glass effect */
+  --card: rgba(249, 38, 114, 0.05); /* A faint magenta card background */
+  --muted: #6A6D9E; /* Muted purple-gray for less important text */
 }
 
 * { 
@@ -14,8 +17,8 @@
 body {
   margin: 0; 
   font-family: "Inter", system-ui, sans-serif;
-  background: linear-gradient(180deg, #030416 0%, #071022 100%);
-  color: #eaf6ff;
+  background-color: var(--bg-dark); /* Using the solid dark background */
+  color: #AEB9E3; /* Main text color - a cool, light lavender */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -114,7 +117,7 @@ a:hover {
 /* --- Homepage --- */
 .hero { padding: 100px 28px 40px; position: relative; display: flex; justify-content: center; }
 .hero .bg { position: absolute; inset: 0; background-size: cover; background-position: center; filter: brightness(0.4); z-index: -1;}
-.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(2,6,15,0.1), rgba(7,16,34,1) 90%); z-index: -1;}
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(2,6,15,0.1), #0F0A1E 90%); z-index: -1;}
 .hero .content { max-width: 1100px; width: 100%; }
 .hero h2 { margin: 0; font-family: 'Poppins'; font-weight: 800; font-size: 44px; line-height: 1.1; color: #eaffff; }
 .hero p { margin: 18px 0; color: rgba(234,246,255,0.9); font-size: 16px; max-width: 650px; line-height: 1.6; }
